@@ -1,0 +1,46 @@
+/* The flex layout allows responsive elements within a container to be automatically arranged 
+depending upon screen size. */
+
+/****************************AGE CALCULATOR******************/
+.container-1,.container-2, .container-3{
+     border: 1px solid black;
+     width: 75%;
+     margin: 0 auto;
+     text-align: center;
+}
+
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps{
+    display: flex; /* This activates the div to become a flexbox, so item within it becomes flex item*/
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* This represents padding between two buttons - that is if there is any div's give it a padding of 10px */
+
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+
+/*****************************CAT GENERATOR*************************************************/
+
+ /* Two containers heew follow the same as above */
+.flex-box-container-2 img{
+    /* This activates the div to become a flexbox, so item within it becomes flex item*/
+    display: flex;  
+    padding: 10px;
+    box-shadow: 0px 10px 50px black;
+}
+
+/*****************************ROCK PAPER SICOSSORS*************************************************/
+.flex-box-rps img:hover{
+    /* This activates the div to become a flexbox, so item within it becomes flex item*/
+    box-sizing: 0px 10px 50px rgba(37, 50, 233, 1);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static\css\style.css">
+    <title>Java script project</title>
+</head>
+<body>
+
+                                    <!-- AGE IN DAYS CALCULATOR -->
+    <div class="container-1">
+        <h2>Your Age in Days</h2>
+
+        <!-- you are placing a flexbox at the top -->
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="enterBirtYear()">Click Me</button>   <!-- Button type -->
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <!-- Here we are inheriting the above properties -->
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+
+                                         <!-- CAT GENERATOR -->
+
+    <div class="container-2">
+        <h2>Cat Generator</h2>
+        <button class="btn btn-success" id ="cat-generator" onclick="generatCat()">Generate Class</button>
+
+        <div class="flex-box-container-2" id="flex-cat-gen"></div>
+        
+    </div>
+
+
+
+    <!-- /*****************************ROCK PAPER SICOSSORS*************************************************/ -->
+
+    <div class="container-3">
+        <h2>ROCK PAPER SCISSORS</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxl6dE8H5WovVudG_w6S4ozUtZ3EkKQQYOrJUluFVt8C4gYAs0&usqp=CAU" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="paper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEY7Dtor7dFffIu57TUApuD_dHBknqO4OpnFw4oFbCMswEMqxs&usqp=CAU" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfFMlyHwMrxR8ce8sLFlzbY1t19TmkTH5xH7qTiecz8VCS7AZx&usqp=CAU height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+
+
+    <script src="static\js\script.js"></script>
+</body>
+</html>     
